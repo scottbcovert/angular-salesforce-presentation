@@ -51,7 +51,11 @@ body {
 }
 
 .reveal img {
-  height: 550px;
+  height: 450px;
+}
+
+.reveal .small-img {
+  height: 350px;
 }
 
 /*********************************************
