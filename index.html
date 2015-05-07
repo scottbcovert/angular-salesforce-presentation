@@ -117,11 +117,11 @@
 							<tr>
 							<tr>
 								<td>Directives</td>
-								<td>extend HTML with custom attributes and elements</td>
+								<td>extend HTML via custom attributes and elements</td>
 							<tr>
 							<tr>
 								<td>Scope</td>
-								<td>context where the model is stored so that controllers, directives and expressions can access it</td>
+								<td>context where the model is stored</td>
 							<tr>
 							<tr>
 								<td>Service</td>
@@ -133,7 +133,7 @@
 							<tr>
 							<tr>
 								<td>Module</td>
-								<td>a container for the different parts of an app including controllers, services, filters, directives which configures the Injector</td>
+								<td>a container for the different parts of an AngularJS app</td>
 							</tr>
 						</tbody>
 					</table>
@@ -164,7 +164,18 @@
 						<img src="img/Two_Way_Data_Binding.png"/>
 					</section>
 					<section>
-						<h2>Sample AngularJS App: Template</h2>
+						<h2>AngularJS Disadvantages</h2>
+						<li>Opinionated</li>
+						<li>Esoteric Syntax & Terminology</li>
+						<img class="small-img" src="img/Angular_Learning_Curve.png">
+						<aside class="notes">
+							<li>AngularJS takes an opinionated approach to frontend development and how CRUD apps should work</li>
+							<li>Some accuse AngularJS of being a bit esoteric with all its angular brackets and custom 'ng-' attributes</li>
+							<li>AngularJS is known for having a very interested learning curve, which contains several highs and lows</li>
+						</aside>
+					</section>
+					<section>
+						<h2>Sample AngularJS App Template</h2>
 						<pre><code data-trim>
 &lt;!doctype html>
 &lt;html lang="en" ng-app="phonecatApp">
@@ -210,7 +221,7 @@
 						</code></pre>
 					</section>
 					<section>
-						<h2>Sample AngularJS App: Controller</h2>
+						<h2>Sample AngularJS App Controller</h2>
 						<pre><code data-trim>
 'use strict';
 
@@ -237,7 +248,7 @@ phonecatApp.controller('PhoneListCtrl', function($scope) {
 						</code></pre>
 					</section>
 					<section>
-						<h2>Sample AngularJS App:</h2>
+						<h2>Sample AngularJS App</h2>
 						<p><a href="http://angular.github.io/angular-phonecat/step-4/app/" target="_blank">Live Demo</a></p>
 					</section>
 				</section>
@@ -249,7 +260,7 @@ phonecatApp.controller('PhoneListCtrl', function($scope) {
 							<div>+</div>
 							<div>Salesforce1</div>
 						</h2>
-						<img src="img/Fonzie.jpg" style="height:400px;"/>
+						<img class="small-img" src="img/Fonzie.jpg"/>
 					</section>
 					<section>
 						<h2>How To Connect AngularJS & Salesforce1</h2>
@@ -288,7 +299,7 @@ phonecatApp.controller('PhoneListCtrl', function($scope) {
 				</section>
 
 				<section>
-					<img src="img/Questions.jpg"/>
+					<img src="img/questions.jpg"/>
 				</section>
 
 				<section>
