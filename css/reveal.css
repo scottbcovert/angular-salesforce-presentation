@@ -44,6 +44,17 @@ body {
   text-shadow: none; }
 
 /*********************************************
+ * CUSTOM OVERRIDES
+ *********************************************/
+.reveal li {
+  margin-top: 1em;
+}
+
+.reveal img {
+  height: 550px;
+}
+
+/*********************************************
  * VIEW FRAGMENTS
  *********************************************/
 .reveal .slides section .fragment {
