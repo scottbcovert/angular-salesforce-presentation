@@ -303,6 +303,69 @@ phonecatApp.controller('PhoneListCtrl', function($scope) {
 				</section>
 
 				<section>
+					<section>
+						<h2>AngularJS vs Angular</h2>
+						<img src="img/Internet_Fight.jpg"/>
+					</section>
+					<section>
+						<h2>Key Changes</h2>
+						<ul>
+							<li>TypeScript</li>							
+							<li>Component-based</li>
+							<li>Improved Performance & Tooling</li>
+						</ul>
+						<aside class="notes">
+							<ul>
+								<li>Angular applications are written in TypeScript as opposed to Javascript like in AngularJS</li>
+								<li>Angular applications are focused on building out independent components that have isolated scopes; the controllers found within AngularJS applications have been eliminated completely and logic now lives within directives themselves.</li>
+								<li>An inbuilt compiler and reduced code generation with Angular vs AngularJS has decreased time spent debugging and improved overall performance</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h2>How To Connect Angular & Salesforce</h2>
+						<ul>
+							<li><a href="https://github.com/scottbcovert/angular-salesforce-boilerplate" target="_blank">Angular + Salesforce Boilerplate</a> by <a href="https://medium.com/@dev0urer/marrying-salesforce-and-angular-2-94a1b2e54872" target="_blank">Chris Watzon</a></li>
+							<li>Application & Node Modules --> Served as Static Resources to VF Page</li>
+							<li>Services --> @RemoteAction & WebService Apex Methods</li>
+							<li>Visualforce Remoting when on Salesforce, SOAP API for local development</li>							
+						</ul>
+						<aside class="notes">
+							<li>There is a very cool tool that was built originally by Chris Watzon for connection Angular 2 and Salesforce</li>
+							<li>I've made some minor changes to it work with the latest version of Angular (5.2.3 at the time of this presentation)</li>
+							<li>Essentially, Chris's tool allows you to develop your Angular app locally and interact with your Salesforce data by calling your Apex class controller through the SOAP API</li>
+							<li>When you're ready to deploy the tool zips up the Angular application as well as its dependencies and sends them to Salesforce as static resources</li>
+							<li>It also deploys the Visualforce page and Apex controller used for hosting the application</li>
+							<li>When the application is run through the Visualforce page, your application will automagically detect that it should start using Visualforce remoting as opposed to the SOAP API to reduce unnecessary API calls</li>
+						</aside>
+					</section>
+					<section>
+						<img src="img/Stop_Demo_Time.jpeg"/>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Salesforce Lightning</h2>
+						<img src="img/Elephant.jpeg"/>
+						<aside class="notes">
+							<li>So of course the elephant in the room here is that Salesforce now has Lightning, which is a component-based javascript framework in its own right</li>
+							<li>Obviously, there could be some serious benefits to leveraging Salesforce Lightning if you're building a new app from scratch</li>
+							<li>I think it goes without saying that building as native to the platform as possible is probably your best bet at making your code future-proof</li>
+							<li>That said, it's quite possible you're not starting from scratch and you already have an Angular app that you'd like to see embedded into Lightning</li>
+							<li>Perhaps you and your team are strong Angular developers and don't feel like you have the time currently to learn the Lightning framework</li>							
+						</aside>
+					</section>
+					<section>
+						<img src="img/Show_Me_The_Demo.jpeg"/>
+						<aside class="notes">
+							<li>Whatever the reason, you can use the lightning:container component released in Spring '17 to embed an app built with a third party framework into Salesforce Lightning</li>
+							<li>It's actually really simple; essentially it's just a matter of uploading your app as a static resource and then placing a single line into a Lightning component</li>
+						</aside>						
+					</section>
+				</section>
+
+				<section>
 					<img src="img/Questions.jpg"/>
 				</section>
 				
